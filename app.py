@@ -14,7 +14,7 @@ def hello():
   try:
     visits = redis.incr("counter")
   except RedisError:
-    visits = "<i>Cannot connect to Redis host 'db'</i>"
+    visits = "Cannot connect to Redis host 'db'"
 
   return render_template('index.html', hostname=socket.gethostname(),vcount=visits)
 
