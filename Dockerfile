@@ -4,7 +4,7 @@ WORKDIR /opt
 
 COPY . /opt/
 
-RUN pip install requirements.txt
+RUN pip install -r requirements.txt
 
 EXPOSE 80
 
